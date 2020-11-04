@@ -1,0 +1,14 @@
+.idea/
+*.iml
+
+node_modules/
+bower_components/
+
+vendor/
+composer.phar
+composer.lock
+.env
+.env.production
+test_result
+cache
+.DS_Store
