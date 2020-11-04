@@ -8,9 +8,9 @@ require __DIR__ . '/../src/obs-autoloader.php'; // sample env
 use Obs\ObsClient;
 use Obs\ObsException;
 
-$ak = 'VCMWB3DSKZUJDCQ4TEDD'; //getenv('huawei_obs_ak');
-$sk = 'rwt1k7d0eHbuvunvBi6RsQkumJIq7iviYWFcvHGK'; getenv('huawei_obs_sk');
-$endpoint = '119.84.98.10'; //getenv('endpoint');
+$ak = getenv('huawei_obs_ak');
+$sk = getenv('huawei_obs_sk');
+$endpoint = getenv('endpoint');
 
 /*
  * Constructs a obs client instance with your account for accessing OBS
