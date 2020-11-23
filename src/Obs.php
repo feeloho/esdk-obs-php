@@ -41,7 +41,7 @@ class Obs
      * @param string $bucket
      * @param string $endpoint
      */
-    public function __construct( $ak, $sk, $bucket, $endpoint)
+    public function __construct($ak, $sk, $bucket, $endpoint)
     {
         $this->ak = $ak;
         $this->sk = $sk;

@@ -1,16 +1,14 @@
 <?php
-declare(strict_types=1);
 
 require __DIR__.'/../vendor/autoload.php';
 
 require __DIR__ . '/../src/obs-autoloader.php'; // sample env
 
 use Obs\ObsClient;
-use Obs\ObsException;
 
-$ak = getenv('huawei_obs_ak');
-$sk = getenv('huawei_obs_sk');
-$endpoint = getenv('endpoint');
+$ak = config('obs.accessKey');
+$sk = config('obs.secretKey');
+$endpoint = config('obs.endpoint');
 
 /*
  * Constructs a obs client instance with your account for accessing OBS

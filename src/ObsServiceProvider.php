@@ -13,7 +13,7 @@ class ObsServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('test',function(){
+        $this->app->singleton('Obs',function() {
             //return new TestService();
             return new Obs(
                 config('obs.accessKey'),
